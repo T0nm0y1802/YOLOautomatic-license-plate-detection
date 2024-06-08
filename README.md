@@ -1,14 +1,14 @@
 
-YOLO License Plate Detection
+# YOLO License Plate Detection
 This project demonstrates automatic license plate detection and text extraction using YOLO (You Only Look Once) and Tesseract OCR (Optical Character Recognition) on a YOLOv8 model. The application is deployed using Streamlit, providing an interactive web interface for users to upload and process images and videos.
 
-Tech Stack
+## Tech Stack
 YOLO (You Only Look Once): For real-time object detection.
 PyTesseract: For optical character recognition to extract text from detected license plates.
 YOLOv8 Model: The specific version of YOLO used in this project.
 Streamlit: For deploying the application as a web service.
-Steps Involved
-1. Model Training
+## Steps Involved
+### 1. Model Training
 Dataset Collection:
 
 Collect a dataset containing images of vehicles with clearly visible license plates.
@@ -22,7 +22,7 @@ Train YOLOv8 Model:
 Use the YOLOv8 repository or a pre-built framework to train the model on the prepared dataset.
 Fine-tune the model parameters (like learning rate, batch size, number of epochs) for optimal performance.
 Save the trained model weights (best.pt).
-2. Application Development
+### 2. Application Development
 Environment Setup:
 
 Install required dependencies: OpenCV, PyTesseract, YOLOv8, Streamlit, and other necessary libraries.
@@ -36,7 +36,7 @@ Develop Streamlit App:
 Create a user interface using Streamlit for users to upload images or videos.
 Process the uploaded media to detect license plates and extract text.
 Display the results (annotated images/videos and extracted text) on the Streamlit interface.
-3. Deployment
+### 3. Deployment
 Prepare for Deployment:
 
 Ensure all necessary files (trained model, scripts, etc.) are in place.
