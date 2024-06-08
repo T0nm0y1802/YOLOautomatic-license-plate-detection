@@ -26,7 +26,7 @@ h1 {
 # Inject custom CSS into Streamlit
 st.markdown(custom_css, unsafe_allow_html=True)
 
-pytesseract.pytesseract.tesseract_cmd = r'Tesseract-OCR\tesseract.exe'
+tesseract_cmd_relative_path = r'Tesseract-OCR\tesseract.exe'
 tesseract_cmd_absolute_path = os.path.abspath(tesseract_cmd_relative_path)
 
 # Check if the Tesseract executable exists at the specified path
