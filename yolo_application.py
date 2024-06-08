@@ -26,7 +26,7 @@ h1 {
 # Inject custom CSS into Streamlit
 st.markdown(custom_css, unsafe_allow_html=True)
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'Tesseract-OCR\tesseract.exe'
 # Streamlit title
 st.title("Automatic License Plate Detection")
 
