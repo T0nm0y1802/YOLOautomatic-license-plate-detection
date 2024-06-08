@@ -27,6 +27,16 @@ h1 {
 st.markdown(custom_css, unsafe_allow_html=True)
 
 pytesseract.pytesseract.tesseract_cmd = r'Tesseract-OCR\tesseract.exe'
+tesseract_cmd_absolute_path = os.path.abspath(tesseract_cmd_relative_path)
+
+# Check if the Tesseract executable exists at the specified path
+if os.path.exists(tesseract_cmd_absolute_path):
+    # Set the Tesseract command path
+    pytesseract.pytesseract.tesseract_cmd = tesseract_cmd_absolute_path
+else:
+    # Display a warning if the Tesseract executable is not found
+    st.warning("Tesseract OCR executable not found. Please verify the path.")
+
 # Streamlit title
 st.title("Automatic License Plate Detection")
 
