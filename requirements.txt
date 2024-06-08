@@ -6,4 +6,3 @@ ultralytics
 numpy
 pytesseract
 dill
-tesseract-ocr
