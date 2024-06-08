@@ -5,11 +5,30 @@ from ultralytics import YOLO
 from PIL import Image
 import os
 import pytesseract
+st.set_page_config(page_title="YOLO Image and Video Processing", page_icon="🚗")
 
+# Define custom CSS styles
+custom_css = """
+<style>
+h1 {
+    color: #FFFFFF; /* Set font color to white */
+    text-align: center;
+}
+.upload-section {
+    margin-top: 20px;
+}
+.output-section {
+    margin-top: 20px;
+    text-align: center;
+}
+</style>
+"""
+# Inject custom CSS into Streamlit
+st.markdown(custom_css, unsafe_allow_html=True)
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 # Streamlit title
-st.title("YOLO Image and Video Processing")
+st.title("Automatic License Plate Detection")
 
 # File uploader in Streamlit
 uploaded_file = st.file_uploader("Upload an image or video file", type=["jpg", "jpeg", "png", "bmp", "mp4", "avi", "mov", "mkv"])
